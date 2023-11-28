@@ -1,0 +1,6 @@
+Student Details:
+UID: 123456
+First Name: nathanel
+ID No: 1234
+Year: 1
+Last Registered Semester: 0

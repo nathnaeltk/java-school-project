@@ -1,0 +1,14 @@
+// Have a Student demo user with a UID of 123456, ID No 0f 1234/14, year of 1, and a value that records the last semester that they have registered for and store it in a dictionary
+// Have a random set of arrays that contain the list of courses for a given semester (Have 6 software engineering courses in each semester for 10 semesters)
+
+1.Prompt user to input their UID and First Name in a loop
+    1.1 Create and use a validation function to ensure the UID is 6 digits long and the first name is not blank
+    1.2 In the function, create return statements to return the approperiate UID and First Name in the case of invalid entries
+2. After logging in, show a menu that contains options that displays the student information, makes an ID for the student and another button that initiates the registration process
+    2.1 If the user inputs the "show information" choosing the show info alternative, print the student details from the dictionary
+    2.2 If the user inputs the "make ID" choosing the make ID alternative, make a file containing the student details and a photo (found at https://thispersondoesnotexist.com/)
+    2.3 If the user inputs the "register" choosing the register alternative, prompt the user to input the semester they want to register for
+        2.3.1 Find the student from the dictionary and determine the semester they are in
+        2.3.2 Show the courses for the semester they just registered for and make a file that contains all their details and the courses they are registered for
+        2.3.3 Set the registration value in the dictionary to the semester they just registered for
+        2.3.4 If the user inputs the "exit" choosing the exit alternative, exit the program
