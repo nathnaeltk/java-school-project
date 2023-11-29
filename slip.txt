@@ -1,0 +1,14 @@
+Student Information:
+Name: name name
+ID: 235
+Department: se
+Year: 2
+Semester: 2
+
+Courses Information:
+Fourth Year First Semester:
+[Small Sensors ,      3 Credit Hours,    Getaneh ]
+[Anthropology ,       3 Credit Hours,    Alemayehu ]
+[Entrepreneurship ,   4 Credit Hours,    Temesgen ]
+[Deep Learning ,      3 Credit Hours,    Dawit ]
+[Artificial Intelligence... , 4 Credit Hours,    Abel ]
