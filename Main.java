@@ -1,6 +1,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -45,26 +46,38 @@ class Student extends Courses {
     public int semester;
 
     public void getProfile() {
-        System.out.print("Enter your first name: ");
-        FName = input.next();
-        System.out.print("Enter your last name: ");
-        LName = input.next();
-        System.out.print("Enter your ID number: ");
-        Id = input.next();
-        System.out.print("Enter your Department: ");
-        Dept = input.next();
+        try {
+            System.out.print("Enter your first name: ");
+            FName = input.next();
+            System.out.print("Enter your last name: ");
+            LName = input.next();
+            System.out.print("Enter your ID number: ");
+            Id = input.next();
+            System.out.print("Enter your Department: ");
+            Dept = input.next();
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input type. Please enter the correct data type.");
+            input.nextLine(); // Clear the input buffer
+            getProfile(); // Re-attempt input
+        }
     }
 
     public void getBatch() {
-        System.out.print("Enter your current year:  ");
-        Year = input.nextInt();
-        do {
-            System.out.print("Enter your current semester: ");
-            semester = input.nextInt();
-            if (semester != 1 && semester != 2) {
-                System.out.println("Invalid Semester input");
-            }
-        } while (semester != 2 && semester != 1);
+        try {
+            System.out.print("Enter your current year:  ");
+            Year = input.nextInt();
+            do {
+                System.out.print("Enter your current semester: ");
+                semester = input.nextInt();
+                if (semester != 1 && semester != 2) {
+                    System.out.println("Invalid Semester input");
+                }
+            } while (semester != 2 && semester != 1);
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input type. Please enter the correct data type.");
+            input.nextLine(); // Clear the input buffer
+            getBatch(); // Re-attempt input
+        }
     }
 
     public String getCourseDetails() {
